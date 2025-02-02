@@ -28,7 +28,7 @@ const list = [
 ];
 
 const Offers = () => {
-  
+
   return (
     <section className="info-list">
       <h2 className="info-list__title">Offers</h2>
@@ -39,11 +39,13 @@ const Offers = () => {
             style={{ backgroundImage: `url(${item.bgi})` }}
             key={i}
           >
-            <h3 className="offers__title">{item.title}</h3>
-            <p className="offers__text">{item.text}</p>
-            <a className="offers__link btn__v2" href={item.link}>
-              Learn more
-            </a>
+            <div className="offers__content">
+              <h3 className="offers__title">{item.title}</h3>
+              <p className="offers__text">{item.text}</p>
+              <button className="offers__link btn__v2">
+                Learn more
+              </button>              
+            </div>
           </li>
         ))}
       </ul>
