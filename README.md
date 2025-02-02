@@ -1,7 +1,7 @@
 ### Для запуска приложения выполните следующие действия:
 
 ```
-git clone https://github.com/ElenaNaychuk/Discover
+git clone https://github.com/ElenaNaychuk/Discover.git
 npm install
 npm run start
 ```
